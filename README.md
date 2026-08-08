@@ -64,7 +64,7 @@ The result is a platform where:
 
 ---
 
-# Platform Architecture
+## Platform Architecture
 
 The platform is organized around a simple architectural principle:
 
@@ -111,7 +111,7 @@ This separation allows the platform to evolve without requiring every business w
 
 ---
 
-# Platform Components
+## Platform Components
 
 The platform is composed of several layers that work together during execution.
 
@@ -153,7 +153,7 @@ This allows workflows to remain focused on business outcomes while reusable engi
 
 ---
 
-# Business Workflows
+## Business Workflows
 
 The platform currently supports two implemented business workflows:
 
@@ -241,7 +241,7 @@ This demonstrates the central business automation principle:
 
 ---
 
-# Configuration-Driven Design
+## Configuration-Driven Design
 
 Platform behavior is driven by centralized configuration rather than hardcoded business values.
 
@@ -279,7 +279,7 @@ The platform can therefore be adapted for different business environments while 
 
 ---
 
-# Runtime Execution
+## Runtime Execution
 
 All platform execution is coordinated through the primary runtime entry point:
 
@@ -336,13 +336,13 @@ The platform therefore treats execution as a lifecycle rather than as a single i
 
 ---
 
-# Platform Operations
+## Platform Operations
 
 Business automation is only one responsibility of the platform.
 
 The platform also maintains awareness of the operational conditions required for that automation to execute successfully.
 
-## Service Health Monitoring
+### Service Health Monitoring
 
 Required Google Workspace dependencies are evaluated before business workflows execute.
 
@@ -395,7 +395,7 @@ This separation allows platform operations to reason about dependency health and
 
 ---
 
-# Failure and Recovery
+## Failure and Recovery
 
 The platform is designed to communicate meaningful operational state transitions rather than repeatedly report the same condition.
 
@@ -448,39 +448,39 @@ This prevents repeated notifications for an unchanged condition while ensuring t
 
 ---
 
-# Engineering Principles
+## Engineering Principles
 
 The platform is built around a small set of engineering principles that guide its implementation and future evolution.
 
-## Configuration Over Hardcoding
+### Configuration Over Hardcoding
 
 Business-specific values belong in configuration wherever practical rather than being embedded directly into workflow logic.
 
-## Reusable Capabilities
+### Reusable Capabilities
 
 Common technical responsibilities are implemented once and reused by multiple workflows.
 
-## Workflow Orchestration
+### Workflow Orchestration
 
 Business workflows coordinate reusable capabilities instead of owning every implementation detail themselves.
 
-## Separation of Concerns
+### Separation of Concerns
 
 Configuration, business workflows, platform engines, infrastructure, and operational responsibilities remain independently understandable.
 
-## Idempotent Event Processing
+### Idempotent Event Processing
 
 Previously processed business events can be recognized and skipped to prevent duplicate business processing.
 
-## State-Aware Operations
+### State-Aware Operations
 
 The platform communicates meaningful state transitions rather than repeatedly reporting the same state.
 
-## Platform Reliability
+### Platform Reliability
 
 Health monitoring, failure detection, notification, and recovery are treated as platform capabilities rather than features belonging to a single business workflow.
 
-## Extensibility
+### Extensibility
 
 New business workflows can be introduced by composing existing capabilities and adding workflow-specific logic where required.
 
@@ -488,7 +488,7 @@ New business workflows can be introduced by composing existing capabilities and 
 
 ---
 
-# Repository Structure
+## Repository Structure
 
 The repository is organized around the platform implementation, configuration, deployment, design documentation, and source code.
 
@@ -538,17 +538,17 @@ The documentation is separated into focused guides so that implementation, confi
 
 ---
 
-# Documentation
+## Documentation
 
 The repository contains dedicated documentation for the major aspects of the platform.
 
-## Configuration Guide
+### Configuration Guide
 
 The Configuration Guide explains how platform behavior is controlled through the centralized configuration repository.
 
 [Explore the Configuration Guide →](configuration/README.md)
 
-## Source Code Guide
+### Source Code Guide
 
 The Source Code Guide explains how the platform is implemented and how the complete runtime lifecycle is orchestrated through the source code.
 
@@ -567,13 +567,13 @@ It covers:
 
 [Explore the Source Code Guide →](source_code/README.md)
 
-## Design Diagrams
+### Design Diagrams
 
 The Design Diagrams Guide provides access to the architectural, component, workflow, and configuration diagrams used to describe the platform visually.
 
 [Explore the Design Diagrams →](design_diagrams/README.md)
 
-## Deployment Guide
+### Deployment Guide
 
 The Deployment Guide explains how the platform is prepared, deployed, and maintained in the target Google Workspace environment.
 
@@ -581,7 +581,7 @@ The Deployment Guide explains how the platform is prepared, deployed, and mainta
 
 ---
 
-# Technology Foundation
+## Technology Foundation
 
 The platform is built around the following technologies and services:
 
@@ -592,14 +592,13 @@ The platform is built around the following technologies and services:
 - Google Forms
 - Google Sheets
 - Google Apps Script Properties Service
-- `clasp`
 - JavaScript
 
 The platform uses Google Workspace as both the execution ecosystem and the business automation environment.
 
 ---
 
-# Current Capabilities
+## Current Capabilities
 
 The platform currently provides:
 
@@ -625,7 +624,7 @@ The platform currently provides:
 
 ---
 
-# Extensibility
+## Future Extensibility
 
 The platform is intentionally designed so that future business workflows can reuse the same underlying capabilities.
 
@@ -665,7 +664,7 @@ The objective is to provide a reusable foundation that can compose existing capa
 
 ---
 
-# Platform Philosophy
+## Platform Philosophy
 
 The platform follows a simple engineering model:
 
@@ -700,7 +699,7 @@ The result is a platform where business workflows remain understandable, reusabl
 
 ---
 
-# Closing Perspective
+## Closing Perspective
 
 The Atlas Academy Google Workspace Automation Platform is more than a collection of Google Apps Script automations.
 
@@ -723,7 +722,7 @@ They are the first business consumers of a reusable automation foundation design
 
 ---
 
-# Documentation Navigation
+## Documentation Navigation
 
 ```text
                          README.md
@@ -749,7 +748,7 @@ Each guide provides a deeper view of a different part of the platform while this
 
 ---
 
-# Platform Summary
+## Platform Summary
 
 The platform brings together configuration, reusable engineering capabilities, business workflows, and operational resilience into a single automation foundation.
 
@@ -778,7 +777,7 @@ The platform brings together configuration, reusable engineering capabilities, b
 
 ---
 
-# Author
+## Author
 
 Built and maintained by **S M Nachiketha**, with a focus on automation engineering, platform architecture, DevOps, and reusable engineering systems.
 
